@@ -47,6 +47,8 @@ Plug 'Yggdroot/indentLine'
 
 Plug 'joshdick/onedark.vim'
 
+Plug 'lervag/vimtex'
+
 call plug#end()
 
 """"""""""""""""""""""""""""
@@ -197,7 +199,9 @@ let g:coc_global_extensions = [
 	\	'coc-snippets',
 	\ 'coc-emmet',
 	\	'coc-html',
+  \ 'coc-vimtex',
 	\ 'coc-css',
+  \ 'coc-tsserver',
 	\ 'coc-json', 
 	\ 'coc-phpls',
 	\ 'coc-yaml',
@@ -205,8 +209,10 @@ let g:coc_global_extensions = [
 	\ 'coc-python',
 	\ 'coc-java',
 	\ 'coc-java-debug',
-	\ 'coc-clangd',
 	\	]
+
+
+set conceallevel=0    " desatica o acultação de caracteres do vimtex
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
